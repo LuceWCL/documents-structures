@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE baladeurs SYSTEM "baladeurs_fnac.dtd">
+<baladeurs>
+    <lecteur id="01">
+        <marque>Sony</marque>
+        <prix>439€99</prix>
+        <stockage>16 GO</stockage>
+        <ecran>3,6"</ecran>
+    </lecteur>
+    <lecteur id="02">
+        <marque>Sony</marque>
+        <prix>249€99</prix>
+        <stockage>32 GO</stockage>
+        <ecran>4"</ecran>
+    </lecteur>
+    <lecteur id="03">
+        <marque>Sony</marque>
+        <prix>359€99</prix>
+        <stockage>128 GO</stockage>
+        <ecran>4"</ecran>
+    </lecteur>
+    <lecteur id="04">
+        <marque>Sony</marque>
+        <prix>249€99</prix>
+        <stockage>32 GO</stockage>
+        <ecran>4"</ecran>
+    </lecteur>
+    <lecteur id="05">
+        <marque>Sony</marque>
+        <prix>94€99</prix>
+        <stockage>4 GO</stockage>
+        <ecran>1"</ecran>
+    </lecteur>
+</baladeurs>

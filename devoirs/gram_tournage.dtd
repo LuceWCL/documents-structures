@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY % STR "#PCDATA" >
+
+<!ELEMENT Shootings (Film+)>
+<!ELEMENT Film (Title,Director,Lieu,Producer_company,Type,Date)>
+<!ELEMENT Title (%STR;)>
+<!ELEMENT Director (%STR;)>
+<!ELEMENT Lieu (Adress,Arrondissement,Coordinates)>
+<!ELEMENT Adress (%STR;)>
+<!ELEMENT Arrondissement (%STR;)>
+<!ELEMENT Coordinates (%STR;)>
+<!ELEMENT Producer_company (%STR;)>
+<!ELEMENT Type (%STR;)>
+<!ELEMENT Date (Beggining,End)>
+<!ELEMENT Beggining (%STR;)>
+<!ELEMENT End (%STR;)>

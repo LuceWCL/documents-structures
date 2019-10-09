@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY % STR "#PCDATA" >
+<!ENTITY marque "Sony" >
+
+<!ELEMENT baladeurs (lecteur+) >
+<!ELEMENT lecteur (marque, prix, stockage, ecran)>
+<!ATTLIST lecteur
+            id CDATA #REQUIRED>
+<!ELEMENT marque (%STR;) >
+<!ELEMENT prix (%STR;) >
+<!ELEMENT stockage (%STR;) >
+<!ELEMENT ecran (%STR;) >
