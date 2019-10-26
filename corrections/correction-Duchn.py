@@ -14,6 +14,7 @@ for element in root.iter("element"):
         determinants.add(element[2].text)
 
 # Les patrons DET-NOM
+# _ variable poubelle, variable qu'on ne va pas réutiliser
 elements = [_ for _ in root.iter("element")]
 for i in range(0, len(elements)-1):
     child = elements[i]
@@ -25,7 +26,7 @@ for i in range(0, len(elements)-1):
 # Reconstruire les phrases
 sentences = []
 sent = []
-for child in elements: 
+for child in elements:
     sent.append(child[2].text)
     if child[0].text == "SENT":
         sentences.append(sent)
