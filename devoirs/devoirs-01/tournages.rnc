@@ -1,0 +1,20 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+element Shootings { 
+    element Film { 
+        attribute n {text},
+        element Title {text},
+        element Director {text},
+        element Lieu {
+            element Adress{text},
+            element Arrondissement {text},
+            element Coordinates {text}
+        },
+        element Producer_company {text},
+        element Type {text},
+        element Date {
+            element Beggining {text},
+            element End {text}
+        }
+    }+
+}

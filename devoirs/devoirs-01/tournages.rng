@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="Shootings">
+            <oneOrMore>
+                <element name="Film">
+                    <attribute name="n"/>
+                    <element name="Title"><empty/></element>
+                    <element name="Director"><empty/></element>
+                    <element name="Lieu">
+                        <group>
+                            <element name="Adress"><empty/></element>
+                            <element name="Arrondissement"><empty/></element>
+                            <element name="Coordinates"><empty/></element>
+                        </group>
+                    </element>
+                    <element name="Producer_company"><empty/></element>
+                    <element name="Type"><empty/></element>
+                    <element name="Date">
+                        <group>
+                            <element name="Beggining"><empty/></element>
+                            <element name="End"><empty/></element>
+                        </group>
+                    </element>
+                </element>
+            </oneOrMore>
+        </element>
+    </start>
+</grammar>
