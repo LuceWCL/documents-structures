@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <ref name="Bibliothèque"/>
+    </start>
+    <define name="Bibliothèque">
+        <element name="bibliothèque">
+            <ref name="Etagères"/>
+        </element>
+    </define>
+    <define name="Etagères">
+        <oneOrMore>
+            <element name="etagere">
+                <ref name="type.attr"/>
+                <ref name="pouss.attr"/>
+                <ref name="Livres"/>
+            </element>
+        </oneOrMore>
+    </define>
+    <define name="type.attr">
+        <attribute name="type"/>
+    </define>
+    <define name="pouss.attr">
+        <optional>
+            <attribute name="poussiere"></attribute>
+        </optional>
+    </define>
+    <define name="Livres">
+        <zeroOrMore>
+            <element name="livre">
+                <ref name="isbn.attr"/>
+                <ref name="Auteur"/>
+                <ref name="Titre"/>
+            </element>
+        </zeroOrMore>
+    </define>
+    <define name="isbn.attr">
+        <attribute name="isbn"></attribute>
+    </define>
+    <define name="Auteur">
+        <element name="auteur">
+            <choice>
+                <group>
+                    <attribute name="nom"/>
+                    <attribute name="prenom"/>
+                </group>
+                </choice>
+        </element>
+    </define>
+    <define name="Titre">
+        <element name="titre">
+            <text/>
+        </element>
+    </define>
+</grammar>
